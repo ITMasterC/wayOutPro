@@ -1,0 +1,14 @@
+{
+  "ver": "1.0.84",
+  "importer": "javascript",
+  "imported": true,
+  "uuid": "2ace37ad-c372-4d47-a089-ca5d2d016859",
+  "files": [
+    ".js"
+  ],
+  "subMetas": {},
+  "userData": {
+    "moduleId": "project:///assets/scripts/conCamera.js",
+    "importAsPlugin": false
+  }
+}
