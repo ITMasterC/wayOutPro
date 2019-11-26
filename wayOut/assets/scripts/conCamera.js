@@ -1,5 +1,6 @@
 import { _decorator, Component, Node , systemEvent, SystemEventType, CameraComponent, geometry, PhysicsSystem, Layers} from "cc";
 const { ccclass, property } = _decorator;
+import{cudeNode}from "./cudeNode"; 
 
 @ccclass("conCamera")
 export class conCamera extends Component {
@@ -27,11 +28,9 @@ export class conCamera extends Component {
         let result = PhysicsSystem.instance.raycastClosest(this._ray, Layers.Enum.DEFAULT, this._maxDistance);
         //result为true时表示有获取到模型
         const r = PhysicsSystem.instance.raycastClosestResult._collidier;
-        console.log('----------------获取到的对象', r);
-        return;
+        //console.log('----------------获取到的对象', r.node.getComponent(cudeNode));
         if (result) {
-            const r = PhysicsSystem.instance.raycastClosestResult._collidier.node.getComponent(cubeNode);
-            r.changeScale();
+            r.node.getComponent(cudeNode).changeScale();
         }
     }
 
