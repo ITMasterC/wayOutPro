@@ -16,6 +16,20 @@ export class cudeNode extends Component {
         // Your initialization goes here.
     }
 
+    init(index, typeIndex){
+        //初始化方块状态
+        this.index = index;//用于计算当前方块的位置
+        if(typeIndex == 1){
+            this.node.scale.y =1;
+        }else{
+            this.node.scale.y = 0.5;
+        }
+    }
+
+    changeSide(){
+        
+    }
+
     changeScale() {
         let endScaleY = 0.5;//伸缩动作最后高度的倍数
         if (this.node.scale.y == 0.5) {
@@ -36,7 +50,7 @@ export class cudeNode extends Component {
         })
         .call(()=>{
             //缓动动作完成时的回调
-
+            //派发一个消息，让相邻的方块执行状态变化
         })
         .union()
         .repeat(1)//反复执行缓动的次数

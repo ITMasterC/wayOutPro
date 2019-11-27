@@ -1,0 +1,14 @@
+{
+  "ver": "1.0.84",
+  "importer": "javascript",
+  "imported": true,
+  "uuid": "0b0481df-c25a-4e8a-87ff-cb307daff5de",
+  "files": [
+    ".js"
+  ],
+  "subMetas": {},
+  "userData": {
+    "moduleId": "project:///assets/scripts/levelNode.js",
+    "importAsPlugin": false
+  }
+}
